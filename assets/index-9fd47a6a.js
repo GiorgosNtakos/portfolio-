@@ -65,7 +65,7 @@
   
           <div class="grid md:grid-cols-2 gap-16 items-start">
             <div class="flex justify-center" data-aos="fade-right" data-aos-delay="100">
-              <img src="/images/my_photo.png" alt="Profile photo"
+              <img src="/portfolio-/images/my_photo.png" alt="Profile photo"
                 class="rounded-lg shadow-xl w-96 h-96 object-cover border-4 border-cyan-500" />
             </div>
   
@@ -156,7 +156,7 @@
       <div class="mt-12 flex flex-wrap justify-center gap-6">
         ${ue("mailto:g_ntakos.dev@gmail.com",t.tooltipEmail,250,"email")}
         ${ue("https://github.com/GiorgosNtakos",t.tooltipGitHub,400,"github")}
-        ${ue("https://linkedin.com/in/giorgos-dakos-28b294272/",t.tooltipLinkedIn,550,"linkedin")}
+        ${ue("https://www.linkedin.com/in/giorgos-ntakos-28b294272/",t.tooltipLinkedIn,550,"linkedin")}
       </div>
     </form>
   </section>
@@ -172,7 +172,7 @@
     </a>
   `}let re=[],se=0,ne=0,W=!1,oe=null;function He(e){oe&&clearTimeout(oe),re=e,se=0,ne=0,W=!1,le()}function le(){const e=document.getElementById("typing-text");if(!e||re.length===0)return;const a=re[se],t=W?a.substring(0,ne--):a.substring(0,ne++);e.textContent=t,!W&&ne===a.length?(W=!0,oe=setTimeout(le,1500)):W&&ne===0?(W=!1,se=(se+1)%re.length,oe=setTimeout(le,400)):oe=setTimeout(le,W?40:80)}const xe=(e,a)=>(Y("home"),setTimeout(()=>He(a[e].typewriter),500),`
     <section id="home" class="min-h-screen flex items-center justify-center text-white bg-cover bg-center px-4"
-      style="background-image: url('/images/vecteezy_close-up-of-circuit-board-electronic-computer-hardware_26769533.jpg');">
+      style="background-image: url('/portfolio-/images/vecteezy_close-up-of-circuit-board-electronic-computer-hardware_26769533.jpg');">
 
       <div class="max-w-7xl mx-auto w-full space-y-8">
         <div data-aos="fade-down" data-aos-delay="0">
@@ -220,7 +220,7 @@
             ${t.resumeIntro}
           </p>
 
-          <a href="/files/${e==="gr"?"cv_gr.pdf":"cv_en.pdf"}" target="_blank" rel="noopener noreferrer"
+          <a href="/portfolio-/files/${e==="gr"?"cv_gr.pdf":"cv_en.pdf"}" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded transition shadow-lg hover:scale-105 duration-300"
              data-aos="fade-up" data-aos-delay="400">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
