@@ -20,7 +20,7 @@ export function renderResume(lang, translations) {
             ${t.resumeIntro}
           </p>
 
-          <a href="/src/components/pdf_files/${lang === 'gr' ? 'cv_gr.pdf' : 'cv_en.pdf'}" target="_blank" rel="noopener noreferrer"
+          <a href="/files/${lang === 'gr' ? 'cv_gr.pdf' : 'cv_en.pdf'}" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded transition shadow-lg hover:scale-105 duration-300"
              data-aos="fade-up" data-aos-delay="400">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

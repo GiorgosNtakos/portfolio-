@@ -60,7 +60,7 @@ export const renderContact = (lang, translations) => {
       <div class="mt-12 flex flex-wrap justify-center gap-6">
         ${renderIcon("mailto:g_ntakos.dev@gmail.com", t.tooltipEmail, 250, "email")}
         ${renderIcon("https://github.com/GiorgosNtakos", t.tooltipGitHub, 400, "github")}
-        ${renderIcon("https://linkedin.com/in/giorgos-dakos-28b294272", t.tooltipLinkedIn, 550, "linkedin")}
+        ${renderIcon("https://linkedin.com/in/giorgos-dakos-28b294272/", t.tooltipLinkedIn, 550, "linkedin")}
       </div>
     </form>
   </section>
