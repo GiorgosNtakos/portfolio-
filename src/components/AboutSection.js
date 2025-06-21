@@ -62,7 +62,7 @@ function renderSkill(name, percent) {
   
           <div class="grid md:grid-cols-2 gap-16 items-start">
             <div class="flex justify-center" data-aos="fade-right" data-aos-delay="100">
-              <img src="/images/my_photo.png" alt="Profile photo"
+              <img src="/portfolio-/images/my_photo.png" alt="Profile photo"
                 class="rounded-lg shadow-xl w-96 h-96 object-cover border-4 border-cyan-500" />
             </div>
   

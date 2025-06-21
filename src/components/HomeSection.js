@@ -10,7 +10,7 @@ export const renderHome = (lang, translations) => {
 
   return `
     <section id="home" class="min-h-screen flex items-center justify-center text-white bg-cover bg-center px-4"
-      style="background-image: url('/images/vecteezy_close-up-of-circuit-board-electronic-computer-hardware_26769533.jpg');">
+      style="background-image: url('/portfolio-/images/vecteezy_close-up-of-circuit-board-electronic-computer-hardware_26769533.jpg');">
 
       <div class="max-w-7xl mx-auto w-full space-y-8">
         <div data-aos="fade-down" data-aos-delay="0">
