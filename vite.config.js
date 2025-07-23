@@ -2,5 +2,8 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/portfolio-/', // ⚠️ Βάλε εδώ το ΟΝΟΜΑ ΤΟΥ REPO σου!
+  base: '/portfolio-/',
+  css: {
+    postcss: './postcss.config.js'
+  }
 })
