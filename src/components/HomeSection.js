@@ -9,7 +9,7 @@ export const renderHome = (lang, translations) => {
   const name = lang === "gr" ? "Γεώργιος Ντάκος" : "Georgios Ntakos";
 
   return `
-    <section id="home" class="min-h-screen flex items-center justify-center text-white bg-cover bg-center px-4"
+    <<section id="home" class="min-h-screen flex flex-col items-center justify-center text-white bg-cover bg-center px-4 text-center sm:text-left"
       style="background-image: url('/portfolio-/images/vecteezy_close-up-of-circuit-board-electronic-computer-hardware_26769533.jpg');">
 
       <div class="max-w-7xl mx-auto w-full space-y-8">
@@ -17,7 +17,7 @@ export const renderHome = (lang, translations) => {
           ${SectionTitle(name, "text-cyan-400 text-shadow-neon", "left")}
         </div>
 
-        <div class="space-y-4 pl-2">
+        <div class="space-y-4 sm:pl-2">
           <p 
             class="text-xl md:text-2xl font-mono text-cyan-300" 
             data-aos="fade-left" 

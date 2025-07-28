@@ -3,7 +3,7 @@ export function SectionTitle(text, color = 'text-cyan-400', align = 'left') {
     const alignment = align === 'center' ? 'text-center' : 'text-left';
   
     return `
-      <h2 class="text-5xl font-extrabold ${color} ${alignment} mb-12 relative font-inter">
+      <h2 class="text-3xl sm:text-5xl font-extrabold ${color} ${alignment} mb-12 relative font-inter">
         ${text}
         <div class="mt-6 w-[320px] h-[24px] overflow-hidden ${align === 'center' ? 'mx-auto' : ''}">
           <svg

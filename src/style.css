@@ -64,3 +64,7 @@ html {
   transition: transform 0.2s ease-out;
   will-change: transform;
 }
+
+.nav-icon {
+ @apply flex flex-col items-center hover:text-cyan-400 transition;
+}
