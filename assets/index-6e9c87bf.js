@@ -65,7 +65,7 @@
   
           <div class="grid md:grid-cols-2 gap-16 items-start">
             <div class="flex justify-center" data-aos="fade-right" data-aos-delay="100">
-              <img src="/portfolio-/images/my_photo.jpg" alt="Profile photo"
+              <img src="/portfolio-/images/my_photo.png" alt="Profile photo"
                 class="rounded-lg shadow-xl w-96 h-96 object-cover border-4 border-cyan-500" />
             </div>
   
@@ -323,7 +323,8 @@
       </div>
     </div>
   `}function ge(){return'<div class="w-1/2"></div>'}function Oe(){return`
-      <aside class="fixed top-0 left-0 h-full w-20 bg-slate-900 shadow-md flex flex-col items-center py-6 z-50 space-y-6">
+      <aside class="hidden sm:flex fixed top-0 left-0 h-full w-20 bg-slate-900 shadow-md flex-col items-center py-6 z-50 space-y-6">
+
   
         <!-- Home -->
         <a href="#home" class="group">
