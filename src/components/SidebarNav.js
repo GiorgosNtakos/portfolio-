@@ -1,7 +1,8 @@
 // src/components/SidebarNav.js
 export function SidebarNav() {
     return `
-      <aside class="fixed top-0 left-0 h-full w-20 bg-slate-900 shadow-md flex flex-col items-center py-6 z-50 space-y-6">
+      <aside class="hidden sm:flex fixed top-0 left-0 h-full w-20 bg-slate-900 shadow-md flex-col items-center py-6 z-50 space-y-6">
+
   
         <!-- Home -->
         <a href="#home" class="group">
