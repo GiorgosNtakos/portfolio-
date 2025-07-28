@@ -1,3 +1,7 @@
+import { SectionTitle } from './SectionTitle.js';
+import { startTypewriter } from './TypeWriter.js';
+import { manageAOS } from '../helpers/helperAOS.js'
+
 export const renderHome = (lang, translations) => {
   manageAOS('home');
   setTimeout(() => startTypewriter(translations[lang].typewriter), 500);
@@ -42,3 +46,4 @@ export const renderHome = (lang, translations) => {
     </section>
   `;
 };
+
