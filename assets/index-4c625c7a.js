@@ -1,9 +1,9 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))i(n);new MutationObserver(n=>{for(const o of n)if(o.type==="childList")for(const l of o.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&i(l)}).observe(document,{childList:!0,subtree:!0});function t(n){const o={};return n.integrity&&(o.integrity=n.integrity),n.referrerPolicy&&(o.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?o.credentials="include":n.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function i(n){if(n.ep)return;n.ep=!0;const o=t(n);fetch(n.href,o)}})();var Ee=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function $e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var he={exports:{}};(function(e,a){(function(t,i){e.exports=i()})(Ee,function(){return function(t){function i(o){if(n[o])return n[o].exports;var l=n[o]={exports:{},id:o,loaded:!1};return t[o].call(l.exports,l,l.exports,i),l.loaded=!0,l.exports}var n={};return i.m=t,i.c=n,i.p="dist/",i(0)}([function(t,i,n){function o(d){return d&&d.__esModule?d:{default:d}}var l=Object.assign||function(d){for(var T=1;T<arguments.length;T++){var P=arguments[T];for(var B in P)Object.prototype.hasOwnProperty.call(P,B)&&(d[B]=P[B])}return d},y=n(1),S=(o(y),n(6)),c=o(S),h=n(7),u=o(h),p=n(8),m=o(p),v=n(9),I=o(v),$=n(10),J=o($),X=n(11),K=o(X),Z=n(14),Q=o(Z),M=[],U=!1,b={offset:120,delay:0,easing:"ease",duration:400,disable:!1,once:!1,startEvent:"DOMContentLoaded",throttleDelay:99,debounceDelay:50,disableMutationObserver:!1},H=function(){var d=arguments.length>0&&arguments[0]!==void 0&&arguments[0];if(d&&(U=!0),U)return M=(0,K.default)(M,b),(0,J.default)(M,b.once),M},G=function(){M=(0,Q.default)(),H()},s=function(){M.forEach(function(d,T){d.node.removeAttribute("data-aos"),d.node.removeAttribute("data-aos-easing"),d.node.removeAttribute("data-aos-duration"),d.node.removeAttribute("data-aos-delay")})},r=function(d){return d===!0||d==="mobile"&&I.default.mobile()||d==="phone"&&I.default.phone()||d==="tablet"&&I.default.tablet()||typeof d=="function"&&d()===!0},f=function(d){b=l(b,d),M=(0,Q.default)();var T=document.all&&!window.atob;return r(b.disable)||T?s():(b.disableMutationObserver||m.default.isSupported()||(console.info(`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))a(n);new MutationObserver(n=>{for(const i of n)if(i.type==="childList")for(const l of i.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&a(l)}).observe(document,{childList:!0,subtree:!0});function t(n){const i={};return n.integrity&&(i.integrity=n.integrity),n.referrerPolicy&&(i.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?i.credentials="include":n.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function a(n){if(n.ep)return;n.ep=!0;const i=t(n);fetch(n.href,i)}})();var Ee=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function $e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var he={exports:{}};(function(e,o){(function(t,a){e.exports=a()})(Ee,function(){return function(t){function a(i){if(n[i])return n[i].exports;var l=n[i]={exports:{},id:i,loaded:!1};return t[i].call(l.exports,l,l.exports,a),l.loaded=!0,l.exports}var n={};return a.m=t,a.c=n,a.p="dist/",a(0)}([function(t,a,n){function i(d){return d&&d.__esModule?d:{default:d}}var l=Object.assign||function(d){for(var I=1;I<arguments.length;I++){var P=arguments[I];for(var B in P)Object.prototype.hasOwnProperty.call(P,B)&&(d[B]=P[B])}return d},b=n(1),S=(i(b),n(6)),c=i(S),h=n(7),u=i(h),p=n(8),m=i(p),y=n(9),T=i(y),$=n(10),J=i($),X=n(11),K=i(X),Z=n(14),Q=i(Z),L=[],U=!1,v={offset:120,delay:0,easing:"ease",duration:400,disable:!1,once:!1,startEvent:"DOMContentLoaded",throttleDelay:99,debounceDelay:50,disableMutationObserver:!1},H=function(){var d=arguments.length>0&&arguments[0]!==void 0&&arguments[0];if(d&&(U=!0),U)return L=(0,K.default)(L,v),(0,J.default)(L,v.once),L},G=function(){L=(0,Q.default)(),H()},s=function(){L.forEach(function(d,I){d.node.removeAttribute("data-aos"),d.node.removeAttribute("data-aos-easing"),d.node.removeAttribute("data-aos-duration"),d.node.removeAttribute("data-aos-delay")})},r=function(d){return d===!0||d==="mobile"&&T.default.mobile()||d==="phone"&&T.default.phone()||d==="tablet"&&T.default.tablet()||typeof d=="function"&&d()===!0},f=function(d){v=l(v,d),L=(0,Q.default)();var I=document.all&&!window.atob;return r(v.disable)||I?s():(v.disableMutationObserver||m.default.isSupported()||(console.info(`
       aos: MutationObserver is not supported on this browser,
       code mutations observing has been disabled.
       You may have to call "refreshHard()" by yourself.
-    `),b.disableMutationObserver=!0),document.querySelector("body").setAttribute("data-aos-easing",b.easing),document.querySelector("body").setAttribute("data-aos-duration",b.duration),document.querySelector("body").setAttribute("data-aos-delay",b.delay),b.startEvent==="DOMContentLoaded"&&["complete","interactive"].indexOf(document.readyState)>-1?H(!0):b.startEvent==="load"?window.addEventListener(b.startEvent,function(){H(!0)}):document.addEventListener(b.startEvent,function(){H(!0)}),window.addEventListener("resize",(0,u.default)(H,b.debounceDelay,!0)),window.addEventListener("orientationchange",(0,u.default)(H,b.debounceDelay,!0)),window.addEventListener("scroll",(0,c.default)(function(){(0,J.default)(M,b.once)},b.throttleDelay)),b.disableMutationObserver||m.default.ready("[data-aos]",G),M)};t.exports={init:f,refresh:H,refreshHard:G}},function(t,i){},,,,,function(t,i){(function(n){function o(r,f,d){function T(g){var E=L,F=C;return L=C=void 0,N=g,A=r.apply(F,E)}function P(g){return N=g,x=setTimeout(R,f),_?T(g):A}function B(g){var E=g-j,F=g-N,me=f-E;return D?G(me,O-F):me}function q(g){var E=g-j,F=g-N;return j===void 0||E>=f||E<0||D&&F>=O}function R(){var g=s();return q(g)?ae(g):void(x=setTimeout(R,B(g)))}function ae(g){return x=void 0,w&&L?T(g):(L=C=void 0,A)}function ce(){x!==void 0&&clearTimeout(x),N=0,L=j=C=x=void 0}function ee(){return x===void 0?A:ae(s())}function V(){var g=s(),E=q(g);if(L=arguments,C=this,j=g,E){if(x===void 0)return P(j);if(D)return x=setTimeout(R,f),T(j)}return x===void 0&&(x=setTimeout(R,f)),A}var L,C,O,A,x,j,N=0,_=!1,D=!1,w=!0;if(typeof r!="function")throw new TypeError(p);return f=h(f)||0,y(d)&&(_=!!d.leading,D="maxWait"in d,O=D?H(h(d.maxWait)||0,f):O,w="trailing"in d?!!d.trailing:w),V.cancel=ce,V.flush=ee,V}function l(r,f,d){var T=!0,P=!0;if(typeof r!="function")throw new TypeError(p);return y(d)&&(T="leading"in d?!!d.leading:T,P="trailing"in d?!!d.trailing:P),o(r,f,{leading:T,maxWait:f,trailing:P})}function y(r){var f=typeof r>"u"?"undefined":u(r);return!!r&&(f=="object"||f=="function")}function S(r){return!!r&&(typeof r>"u"?"undefined":u(r))=="object"}function c(r){return(typeof r>"u"?"undefined":u(r))=="symbol"||S(r)&&b.call(r)==v}function h(r){if(typeof r=="number")return r;if(c(r))return m;if(y(r)){var f=typeof r.valueOf=="function"?r.valueOf():r;r=y(f)?f+"":f}if(typeof r!="string")return r===0?r:+r;r=r.replace(I,"");var d=J.test(r);return d||X.test(r)?K(r.slice(2),d?2:8):$.test(r)?m:+r}var u=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(r){return typeof r}:function(r){return r&&typeof Symbol=="function"&&r.constructor===Symbol&&r!==Symbol.prototype?"symbol":typeof r},p="Expected a function",m=NaN,v="[object Symbol]",I=/^\s+|\s+$/g,$=/^[-+]0x[0-9a-f]+$/i,J=/^0b[01]+$/i,X=/^0o[0-7]+$/i,K=parseInt,Z=(typeof n>"u"?"undefined":u(n))=="object"&&n&&n.Object===Object&&n,Q=(typeof self>"u"?"undefined":u(self))=="object"&&self&&self.Object===Object&&self,M=Z||Q||Function("return this")(),U=Object.prototype,b=U.toString,H=Math.max,G=Math.min,s=function(){return M.Date.now()};t.exports=l}).call(i,function(){return this}())},function(t,i){(function(n){function o(s,r,f){function d(w){var g=V,E=L;return V=L=void 0,j=w,O=s.apply(E,g)}function T(w){return j=w,A=setTimeout(q,r),N?d(w):O}function P(w){var g=w-x,E=w-j,F=r-g;return _?H(F,C-E):F}function B(w){var g=w-x,E=w-j;return x===void 0||g>=r||g<0||_&&E>=C}function q(){var w=G();return B(w)?R(w):void(A=setTimeout(q,P(w)))}function R(w){return A=void 0,D&&V?d(w):(V=L=void 0,O)}function ae(){A!==void 0&&clearTimeout(A),j=0,V=x=L=A=void 0}function ce(){return A===void 0?O:R(G())}function ee(){var w=G(),g=B(w);if(V=arguments,L=this,x=w,g){if(A===void 0)return T(x);if(_)return A=setTimeout(q,r),d(x)}return A===void 0&&(A=setTimeout(q,r)),O}var V,L,C,O,A,x,j=0,N=!1,_=!1,D=!0;if(typeof s!="function")throw new TypeError(u);return r=c(r)||0,l(f)&&(N=!!f.leading,_="maxWait"in f,C=_?b(c(f.maxWait)||0,r):C,D="trailing"in f?!!f.trailing:D),ee.cancel=ae,ee.flush=ce,ee}function l(s){var r=typeof s>"u"?"undefined":h(s);return!!s&&(r=="object"||r=="function")}function y(s){return!!s&&(typeof s>"u"?"undefined":h(s))=="object"}function S(s){return(typeof s>"u"?"undefined":h(s))=="symbol"||y(s)&&U.call(s)==m}function c(s){if(typeof s=="number")return s;if(S(s))return p;if(l(s)){var r=typeof s.valueOf=="function"?s.valueOf():s;s=l(r)?r+"":r}if(typeof s!="string")return s===0?s:+s;s=s.replace(v,"");var f=$.test(s);return f||J.test(s)?X(s.slice(2),f?2:8):I.test(s)?p:+s}var h=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(s){return typeof s}:function(s){return s&&typeof Symbol=="function"&&s.constructor===Symbol&&s!==Symbol.prototype?"symbol":typeof s},u="Expected a function",p=NaN,m="[object Symbol]",v=/^\s+|\s+$/g,I=/^[-+]0x[0-9a-f]+$/i,$=/^0b[01]+$/i,J=/^0o[0-7]+$/i,X=parseInt,K=(typeof n>"u"?"undefined":h(n))=="object"&&n&&n.Object===Object&&n,Z=(typeof self>"u"?"undefined":h(self))=="object"&&self&&self.Object===Object&&self,Q=K||Z||Function("return this")(),M=Object.prototype,U=M.toString,b=Math.max,H=Math.min,G=function(){return Q.Date.now()};t.exports=o}).call(i,function(){return this}())},function(t,i){function n(h){var u=void 0,p=void 0;for(u=0;u<h.length;u+=1)if(p=h[u],p.dataset&&p.dataset.aos||p.children&&n(p.children))return!0;return!1}function o(){return window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver}function l(){return!!o()}function y(h,u){var p=window.document,m=o(),v=new m(S);c=u,v.observe(p.documentElement,{childList:!0,subtree:!0,removedNodes:!0})}function S(h){h&&h.forEach(function(u){var p=Array.prototype.slice.call(u.addedNodes),m=Array.prototype.slice.call(u.removedNodes),v=p.concat(m);if(n(v))return c()})}Object.defineProperty(i,"__esModule",{value:!0});var c=function(){};i.default={isSupported:l,ready:y}},function(t,i){function n(p,m){if(!(p instanceof m))throw new TypeError("Cannot call a class as a function")}function o(){return navigator.userAgent||navigator.vendor||window.opera||""}Object.defineProperty(i,"__esModule",{value:!0});var l=function(){function p(m,v){for(var I=0;I<v.length;I++){var $=v[I];$.enumerable=$.enumerable||!1,$.configurable=!0,"value"in $&&($.writable=!0),Object.defineProperty(m,$.key,$)}}return function(m,v,I){return v&&p(m.prototype,v),I&&p(m,I),m}}(),y=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i,S=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,c=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i,h=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,u=function(){function p(){n(this,p)}return l(p,[{key:"phone",value:function(){var m=o();return!(!y.test(m)&&!S.test(m.substr(0,4)))}},{key:"mobile",value:function(){var m=o();return!(!c.test(m)&&!h.test(m.substr(0,4)))}},{key:"tablet",value:function(){return this.mobile()&&!this.phone()}}]),p}();i.default=new u},function(t,i){Object.defineProperty(i,"__esModule",{value:!0});var n=function(l,y,S){var c=l.node.getAttribute("data-aos-once");y>l.position?l.node.classList.add("aos-animate"):typeof c<"u"&&(c==="false"||!S&&c!=="true")&&l.node.classList.remove("aos-animate")},o=function(l,y){var S=window.pageYOffset,c=window.innerHeight;l.forEach(function(h,u){n(h,c+S,y)})};i.default=o},function(t,i,n){function o(c){return c&&c.__esModule?c:{default:c}}Object.defineProperty(i,"__esModule",{value:!0});var l=n(12),y=o(l),S=function(c,h){return c.forEach(function(u,p){u.node.classList.add("aos-init"),u.position=(0,y.default)(u.node,h.offset)}),c};i.default=S},function(t,i,n){function o(c){return c&&c.__esModule?c:{default:c}}Object.defineProperty(i,"__esModule",{value:!0});var l=n(13),y=o(l),S=function(c,h){var u=0,p=0,m=window.innerHeight,v={offset:c.getAttribute("data-aos-offset"),anchor:c.getAttribute("data-aos-anchor"),anchorPlacement:c.getAttribute("data-aos-anchor-placement")};switch(v.offset&&!isNaN(v.offset)&&(p=parseInt(v.offset)),v.anchor&&document.querySelectorAll(v.anchor)&&(c=document.querySelectorAll(v.anchor)[0]),u=(0,y.default)(c).top,v.anchorPlacement){case"top-bottom":break;case"center-bottom":u+=c.offsetHeight/2;break;case"bottom-bottom":u+=c.offsetHeight;break;case"top-center":u+=m/2;break;case"bottom-center":u+=m/2+c.offsetHeight;break;case"center-center":u+=m/2+c.offsetHeight/2;break;case"top-top":u+=m;break;case"bottom-top":u+=c.offsetHeight+m;break;case"center-top":u+=c.offsetHeight/2+m}return v.anchorPlacement||v.offset||isNaN(h)||(p=h),u+p};i.default=S},function(t,i){Object.defineProperty(i,"__esModule",{value:!0});var n=function(o){for(var l=0,y=0;o&&!isNaN(o.offsetLeft)&&!isNaN(o.offsetTop);)l+=o.offsetLeft-(o.tagName!="BODY"?o.scrollLeft:0),y+=o.offsetTop-(o.tagName!="BODY"?o.scrollTop:0),o=o.offsetParent;return{top:y,left:l}};i.default=n},function(t,i){Object.defineProperty(i,"__esModule",{value:!0});var n=function(o){return o=o||document.querySelectorAll("[data-aos]"),Array.prototype.map.call(o,function(l){return{node:l}})};i.default=n}])})})(he);var Me=he.exports;const de=$e(Me);function ie(e,a="text-cyan-400",t="left"){return`
-      <h2 class="text-5xl font-extrabold ${a} ${t==="center"?"text-center":"text-left"} mb-12 relative font-inter">
+    `),v.disableMutationObserver=!0),document.querySelector("body").setAttribute("data-aos-easing",v.easing),document.querySelector("body").setAttribute("data-aos-duration",v.duration),document.querySelector("body").setAttribute("data-aos-delay",v.delay),v.startEvent==="DOMContentLoaded"&&["complete","interactive"].indexOf(document.readyState)>-1?H(!0):v.startEvent==="load"?window.addEventListener(v.startEvent,function(){H(!0)}):document.addEventListener(v.startEvent,function(){H(!0)}),window.addEventListener("resize",(0,u.default)(H,v.debounceDelay,!0)),window.addEventListener("orientationchange",(0,u.default)(H,v.debounceDelay,!0)),window.addEventListener("scroll",(0,c.default)(function(){(0,J.default)(L,v.once)},v.throttleDelay)),v.disableMutationObserver||m.default.ready("[data-aos]",G),L)};t.exports={init:f,refresh:H,refreshHard:G}},function(t,a){},,,,,function(t,a){(function(n){function i(r,f,d){function I(g){var E=M,F=O;return M=O=void 0,N=g,A=r.apply(F,E)}function P(g){return N=g,w=setTimeout(R,f),_?I(g):A}function B(g){var E=g-j,F=g-N,me=f-E;return C?G(me,D-F):me}function q(g){var E=g-j,F=g-N;return j===void 0||E>=f||E<0||C&&F>=D}function R(){var g=s();return q(g)?oe(g):void(w=setTimeout(R,B(g)))}function oe(g){return w=void 0,x&&M?I(g):(M=O=void 0,A)}function ce(){w!==void 0&&clearTimeout(w),N=0,M=j=O=w=void 0}function ee(){return w===void 0?A:oe(s())}function V(){var g=s(),E=q(g);if(M=arguments,O=this,j=g,E){if(w===void 0)return P(j);if(C)return w=setTimeout(R,f),I(j)}return w===void 0&&(w=setTimeout(R,f)),A}var M,O,D,A,w,j,N=0,_=!1,C=!1,x=!0;if(typeof r!="function")throw new TypeError(p);return f=h(f)||0,b(d)&&(_=!!d.leading,C="maxWait"in d,D=C?H(h(d.maxWait)||0,f):D,x="trailing"in d?!!d.trailing:x),V.cancel=ce,V.flush=ee,V}function l(r,f,d){var I=!0,P=!0;if(typeof r!="function")throw new TypeError(p);return b(d)&&(I="leading"in d?!!d.leading:I,P="trailing"in d?!!d.trailing:P),i(r,f,{leading:I,maxWait:f,trailing:P})}function b(r){var f=typeof r>"u"?"undefined":u(r);return!!r&&(f=="object"||f=="function")}function S(r){return!!r&&(typeof r>"u"?"undefined":u(r))=="object"}function c(r){return(typeof r>"u"?"undefined":u(r))=="symbol"||S(r)&&v.call(r)==y}function h(r){if(typeof r=="number")return r;if(c(r))return m;if(b(r)){var f=typeof r.valueOf=="function"?r.valueOf():r;r=b(f)?f+"":f}if(typeof r!="string")return r===0?r:+r;r=r.replace(T,"");var d=J.test(r);return d||X.test(r)?K(r.slice(2),d?2:8):$.test(r)?m:+r}var u=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(r){return typeof r}:function(r){return r&&typeof Symbol=="function"&&r.constructor===Symbol&&r!==Symbol.prototype?"symbol":typeof r},p="Expected a function",m=NaN,y="[object Symbol]",T=/^\s+|\s+$/g,$=/^[-+]0x[0-9a-f]+$/i,J=/^0b[01]+$/i,X=/^0o[0-7]+$/i,K=parseInt,Z=(typeof n>"u"?"undefined":u(n))=="object"&&n&&n.Object===Object&&n,Q=(typeof self>"u"?"undefined":u(self))=="object"&&self&&self.Object===Object&&self,L=Z||Q||Function("return this")(),U=Object.prototype,v=U.toString,H=Math.max,G=Math.min,s=function(){return L.Date.now()};t.exports=l}).call(a,function(){return this}())},function(t,a){(function(n){function i(s,r,f){function d(x){var g=V,E=M;return V=M=void 0,j=x,D=s.apply(E,g)}function I(x){return j=x,A=setTimeout(q,r),N?d(x):D}function P(x){var g=x-w,E=x-j,F=r-g;return _?H(F,O-E):F}function B(x){var g=x-w,E=x-j;return w===void 0||g>=r||g<0||_&&E>=O}function q(){var x=G();return B(x)?R(x):void(A=setTimeout(q,P(x)))}function R(x){return A=void 0,C&&V?d(x):(V=M=void 0,D)}function oe(){A!==void 0&&clearTimeout(A),j=0,V=w=M=A=void 0}function ce(){return A===void 0?D:R(G())}function ee(){var x=G(),g=B(x);if(V=arguments,M=this,w=x,g){if(A===void 0)return I(w);if(_)return A=setTimeout(q,r),d(w)}return A===void 0&&(A=setTimeout(q,r)),D}var V,M,O,D,A,w,j=0,N=!1,_=!1,C=!0;if(typeof s!="function")throw new TypeError(u);return r=c(r)||0,l(f)&&(N=!!f.leading,_="maxWait"in f,O=_?v(c(f.maxWait)||0,r):O,C="trailing"in f?!!f.trailing:C),ee.cancel=oe,ee.flush=ce,ee}function l(s){var r=typeof s>"u"?"undefined":h(s);return!!s&&(r=="object"||r=="function")}function b(s){return!!s&&(typeof s>"u"?"undefined":h(s))=="object"}function S(s){return(typeof s>"u"?"undefined":h(s))=="symbol"||b(s)&&U.call(s)==m}function c(s){if(typeof s=="number")return s;if(S(s))return p;if(l(s)){var r=typeof s.valueOf=="function"?s.valueOf():s;s=l(r)?r+"":r}if(typeof s!="string")return s===0?s:+s;s=s.replace(y,"");var f=$.test(s);return f||J.test(s)?X(s.slice(2),f?2:8):T.test(s)?p:+s}var h=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(s){return typeof s}:function(s){return s&&typeof Symbol=="function"&&s.constructor===Symbol&&s!==Symbol.prototype?"symbol":typeof s},u="Expected a function",p=NaN,m="[object Symbol]",y=/^\s+|\s+$/g,T=/^[-+]0x[0-9a-f]+$/i,$=/^0b[01]+$/i,J=/^0o[0-7]+$/i,X=parseInt,K=(typeof n>"u"?"undefined":h(n))=="object"&&n&&n.Object===Object&&n,Z=(typeof self>"u"?"undefined":h(self))=="object"&&self&&self.Object===Object&&self,Q=K||Z||Function("return this")(),L=Object.prototype,U=L.toString,v=Math.max,H=Math.min,G=function(){return Q.Date.now()};t.exports=i}).call(a,function(){return this}())},function(t,a){function n(h){var u=void 0,p=void 0;for(u=0;u<h.length;u+=1)if(p=h[u],p.dataset&&p.dataset.aos||p.children&&n(p.children))return!0;return!1}function i(){return window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver}function l(){return!!i()}function b(h,u){var p=window.document,m=i(),y=new m(S);c=u,y.observe(p.documentElement,{childList:!0,subtree:!0,removedNodes:!0})}function S(h){h&&h.forEach(function(u){var p=Array.prototype.slice.call(u.addedNodes),m=Array.prototype.slice.call(u.removedNodes),y=p.concat(m);if(n(y))return c()})}Object.defineProperty(a,"__esModule",{value:!0});var c=function(){};a.default={isSupported:l,ready:b}},function(t,a){function n(p,m){if(!(p instanceof m))throw new TypeError("Cannot call a class as a function")}function i(){return navigator.userAgent||navigator.vendor||window.opera||""}Object.defineProperty(a,"__esModule",{value:!0});var l=function(){function p(m,y){for(var T=0;T<y.length;T++){var $=y[T];$.enumerable=$.enumerable||!1,$.configurable=!0,"value"in $&&($.writable=!0),Object.defineProperty(m,$.key,$)}}return function(m,y,T){return y&&p(m.prototype,y),T&&p(m,T),m}}(),b=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i,S=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,c=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i,h=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,u=function(){function p(){n(this,p)}return l(p,[{key:"phone",value:function(){var m=i();return!(!b.test(m)&&!S.test(m.substr(0,4)))}},{key:"mobile",value:function(){var m=i();return!(!c.test(m)&&!h.test(m.substr(0,4)))}},{key:"tablet",value:function(){return this.mobile()&&!this.phone()}}]),p}();a.default=new u},function(t,a){Object.defineProperty(a,"__esModule",{value:!0});var n=function(l,b,S){var c=l.node.getAttribute("data-aos-once");b>l.position?l.node.classList.add("aos-animate"):typeof c<"u"&&(c==="false"||!S&&c!=="true")&&l.node.classList.remove("aos-animate")},i=function(l,b){var S=window.pageYOffset,c=window.innerHeight;l.forEach(function(h,u){n(h,c+S,b)})};a.default=i},function(t,a,n){function i(c){return c&&c.__esModule?c:{default:c}}Object.defineProperty(a,"__esModule",{value:!0});var l=n(12),b=i(l),S=function(c,h){return c.forEach(function(u,p){u.node.classList.add("aos-init"),u.position=(0,b.default)(u.node,h.offset)}),c};a.default=S},function(t,a,n){function i(c){return c&&c.__esModule?c:{default:c}}Object.defineProperty(a,"__esModule",{value:!0});var l=n(13),b=i(l),S=function(c,h){var u=0,p=0,m=window.innerHeight,y={offset:c.getAttribute("data-aos-offset"),anchor:c.getAttribute("data-aos-anchor"),anchorPlacement:c.getAttribute("data-aos-anchor-placement")};switch(y.offset&&!isNaN(y.offset)&&(p=parseInt(y.offset)),y.anchor&&document.querySelectorAll(y.anchor)&&(c=document.querySelectorAll(y.anchor)[0]),u=(0,b.default)(c).top,y.anchorPlacement){case"top-bottom":break;case"center-bottom":u+=c.offsetHeight/2;break;case"bottom-bottom":u+=c.offsetHeight;break;case"top-center":u+=m/2;break;case"bottom-center":u+=m/2+c.offsetHeight;break;case"center-center":u+=m/2+c.offsetHeight/2;break;case"top-top":u+=m;break;case"bottom-top":u+=c.offsetHeight+m;break;case"center-top":u+=c.offsetHeight/2+m}return y.anchorPlacement||y.offset||isNaN(h)||(p=h),u+p};a.default=S},function(t,a){Object.defineProperty(a,"__esModule",{value:!0});var n=function(i){for(var l=0,b=0;i&&!isNaN(i.offsetLeft)&&!isNaN(i.offsetTop);)l+=i.offsetLeft-(i.tagName!="BODY"?i.scrollLeft:0),b+=i.offsetTop-(i.tagName!="BODY"?i.scrollTop:0),i=i.offsetParent;return{top:b,left:l}};a.default=n},function(t,a){Object.defineProperty(a,"__esModule",{value:!0});var n=function(i){return i=i||document.querySelectorAll("[data-aos]"),Array.prototype.map.call(i,function(l){return{node:l}})};a.default=n}])})})(he);var Le=he.exports;const de=$e(Le);function ie(e,o="text-cyan-400",t="left"){return`
+      <h2 class="text-3xl sm:text-5xl font-extrabold ${o} ${t==="center"?"text-center":"text-left"} mb-12 relative font-inter">
         ${e}
         <div class="mt-6 w-[320px] h-[24px] overflow-hidden ${t==="center"?"mx-auto":""}">
           <svg
@@ -31,32 +31,32 @@
           </svg>
         </div>
       </h2>
-    `}let ye=!1;function je(e){ye=e}function Y(e){!ye&&sessionStorage.getItem(`animated_${e}`)?setTimeout(()=>{document.querySelectorAll(`#${e} [data-aos]`).forEach(a=>{a.removeAttribute("data-aos"),a.removeAttribute("data-aos-delay")})},0):sessionStorage.setItem(`animated_${e}`,"1")}function ve(){document.querySelectorAll("[data-skill-toggle]").forEach(e=>{e.addEventListener("click",()=>{const a=e.getAttribute("data-skill-toggle"),t=document.getElementById(a),i=e.querySelector("span:last-child"),n=t.classList.contains("hidden");t.classList.toggle("hidden"),i.textContent=n?"−":"+"})})}function Le(e,a){return`
+    `}let be=!1;function je(e){be=e}function Y(e){!be&&sessionStorage.getItem(`animated_${e}`)?setTimeout(()=>{document.querySelectorAll(`#${e} [data-aos]`).forEach(o=>{o.removeAttribute("data-aos"),o.removeAttribute("data-aos-delay")})},0):sessionStorage.setItem(`animated_${e}`,"1")}function ye(){document.querySelectorAll("[data-skill-toggle]").forEach(e=>{e.addEventListener("click",()=>{const o=e.getAttribute("data-skill-toggle"),t=document.getElementById(o),a=e.querySelector("span:last-child"),n=t.classList.contains("hidden");t.classList.toggle("hidden"),a.textContent=n?"−":"+"})})}function Me(e,o){return`
       <div>
         <div class="flex justify-between mb-1 text-sm">
           <span>${e}</span>
-          <span>${a}%</span>
+          <span>${o}%</span>
         </div>
         <div class="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
-          <div class="bg-cyan-400 h-3 rounded-full" style="width: ${a}%"></div>
+          <div class="bg-cyan-400 h-3 rounded-full" style="width: ${o}%"></div>
         </div>
       </div>
-    `}function te(e,a,t=0){const i=e.toLowerCase().replace(/\s+/g,"-");return`
+    `}function te(e,o,t=0){const a=e.toLowerCase().replace(/\s+/g,"-");return`
       <div class="flex flex-col h-full" data-aos="zoom-in-up" data-aos-delay="${t}">
         <button 
           class="w-full text-left font-semibold text-slate-200 bg-slate-800 px-4 py-3 rounded-md hover:bg-slate-700 transition flex justify-between items-center"
-          data-skill-toggle="${i}"
+          data-skill-toggle="${a}"
         >
           <span>${e}</span>
           <span class="text-cyan-400 text-xl">+</span>
         </button>
-        <div id="${i}" class="hidden pt-4 transition-all duration-300">
+        <div id="${a}" class="hidden pt-4 transition-all duration-300">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            ${a.map(n=>Le(n.name,n.percent)).join("")}
+            ${o.map(n=>Me(n.name,n.percent)).join("")}
           </div>
         </div>
       </div>
-    `}function be(e="en",a){Y("about-section");const t=a[e].aboutSection;return`
+    `}function ve(e="en",o){Y("about-section");const t=o[e].aboutSection;return`
       <section id="about-section" class="bg-slate-800 py-24 px-4 text-white">
         <div class="max-w-7xl mx-auto space-y-20">
           <div data-aos="fade-down">
@@ -100,7 +100,7 @@
           </div>
         </div>
       </section>
-    `}const we=(e,a)=>{Y("contact");const t=a[e].contactSection;return`
+    `}const xe=(e,o)=>{Y("contact");const t=o[e].contactSection;return`
   <section id="contact" class="min-h-screen flex items-center justify-center bg-slate-800 px-4">
     <form action="https://formspree.io/f/mjkrwepg" method="POST"
       class="bg-slate-900 p-8 rounded-lg shadow-md w-full max-w-md space-y-4" 
@@ -160,18 +160,18 @@
       </div>
     </form>
   </section>
-`};function ue(e,a,t,i){const n={email:{bg:"bg-cyan-500 hover:bg-cyan-400",icon:'<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>'},github:{bg:"bg-slate-800 hover:bg-slate-700",icon:'<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 0a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.23c-3.34.73-4.04-1.6-4.04-1.6-.55-1.38-1.34-1.74-1.34-1.74-1.1-.75.08-.74.08-.74 1.22.1 1.86 1.25 1.86 1.25 1.08 1.85 2.84 1.31 3.53 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.3-.54-1.53.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.67.25 2.9.12 3.2.77.84 1.24 1.92 1.24 3.24 0 4.63-2.82 5.65-5.5 5.95.44.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57A12 12 0 0012 0z" clip-rule="evenodd"/></svg>'},linkedin:{bg:"bg-cyan-500 hover:bg-cyan-400",icon:'<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V149.1h92.88zm-46.44-338C24.24 110 0 85.77 0 56.72A56.66 56.66 0 0 1 56.68 0c31.23 0 56.47 24.23 56.47 56.68 0 29.05-25.24 53.28-56.47 53.32zM447.92 448h-92.6V304.4c0-34.25-.71-78.21-47.65-78.21-47.66 0-54.95 37.26-54.95 75.7V448h-92.56V149.1h88.84v40.8h1.28c12.39-23.49 42.64-48.27 87.79-48.27 93.92 0 111.21 61.85 111.21 142.3V448z"/></svg>'}},{bg:o,icon:l}=n[i];return`
+`};function ue(e,o,t,a){const n={email:{bg:"bg-cyan-500 hover:bg-cyan-400",icon:'<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>'},github:{bg:"bg-slate-800 hover:bg-slate-700",icon:'<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 0a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.23c-3.34.73-4.04-1.6-4.04-1.6-.55-1.38-1.34-1.74-1.34-1.74-1.1-.75.08-.74.08-.74 1.22.1 1.86 1.25 1.86 1.25 1.08 1.85 2.84 1.31 3.53 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.3-.54-1.53.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.67.25 2.9.12 3.2.77.84 1.24 1.92 1.24 3.24 0 4.63-2.82 5.65-5.5 5.95.44.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57A12 12 0 0012 0z" clip-rule="evenodd"/></svg>'},linkedin:{bg:"bg-cyan-500 hover:bg-cyan-400",icon:'<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V149.1h92.88zm-46.44-338C24.24 110 0 85.77 0 56.72A56.66 56.66 0 0 1 56.68 0c31.23 0 56.47 24.23 56.47 56.68 0 29.05-25.24 53.28-56.47 53.32zM447.92 448h-92.6V304.4c0-34.25-.71-78.21-47.65-78.21-47.66 0-54.95 37.26-54.95 75.7V448h-92.56V149.1h88.84v40.8h1.28c12.39-23.49 42.64-48.27 87.79-48.27 93.92 0 111.21 61.85 111.21 142.3V448z"/></svg>'}},{bg:i,icon:l}=n[a];return`
     <a href="${e}" target="_blank" rel="noopener noreferrer"
        data-aos="fade-up" data-aos-delay="${t}"
-       class="group relative flex items-center justify-center w-12 h-12 rounded-full ${o} transition shadow-lg"
-       aria-label="${i}">
+       class="group relative flex items-center justify-center w-12 h-12 rounded-full ${i} transition shadow-lg"
+       aria-label="${a}">
       <span class="absolute bottom-14 left-1/2 -translate-x-1/2 whitespace-nowrap px-2 py-1 text-xs text-white bg-gray-700 rounded opacity-0 group-hover:opacity-100 transition duration-200">
-        ${a}
+        ${o}
       </span>
       ${l}
     </a>
-  `}let re=[],se=0,ne=0,W=!1,oe=null;function He(e){oe&&clearTimeout(oe),re=e,se=0,ne=0,W=!1,le()}function le(){const e=document.getElementById("typing-text");if(!e||re.length===0)return;const a=re[se],t=W?a.substring(0,ne--):a.substring(0,ne++);e.textContent=t,!W&&ne===a.length?(W=!0,oe=setTimeout(le,1500)):W&&ne===0?(W=!1,se=(se+1)%re.length,oe=setTimeout(le,400)):oe=setTimeout(le,W?40:80)}const xe=(e,a)=>(Y("home"),setTimeout(()=>He(a[e].typewriter),500),`
-    <section id="home" class="min-h-screen flex items-center justify-center text-white bg-cover bg-center px-4"
+  `}let re=[],se=0,ne=0,W=!1,ae=null;function He(e){ae&&clearTimeout(ae),re=e,se=0,ne=0,W=!1,le()}function le(){const e=document.getElementById("typing-text");if(!e||re.length===0)return;const o=re[se],t=W?o.substring(0,ne--):o.substring(0,ne++);e.textContent=t,!W&&ne===o.length?(W=!0,ae=setTimeout(le,1500)):W&&ne===0?(W=!1,se=(se+1)%re.length,ae=setTimeout(le,400)):ae=setTimeout(le,W?40:80)}const we=(e,o)=>(Y("home"),setTimeout(()=>He(o[e].typewriter),500),`
+    <<section id="home" class="min-h-screen flex flex-col items-center justify-center text-white bg-cover bg-center px-4 text-center sm:text-left"
       style="background-image: url('/portfolio-/images/vecteezy_close-up-of-circuit-board-electronic-computer-hardware_26769533.jpg');">
 
       <div class="max-w-7xl mx-auto w-full space-y-8">
@@ -179,7 +179,7 @@
           ${ie(e==="gr"?"Γεώργιος Ντάκος":"Georgios Ntakos","text-cyan-400 text-shadow-neon","left")}
         </div>
 
-        <div class="space-y-4 pl-2">
+        <div class="space-y-4 sm:pl-2">
           <p 
             class="text-xl md:text-2xl font-mono text-cyan-300" 
             data-aos="fade-left" 
@@ -192,7 +192,7 @@
             class="italic text-cyan-200 text-sm md:text-base max-w-xl bg-black/30 px-4 py-2 rounded-md w-fit shadow-lg shadow-cyan-400/40" 
             data-aos="fade-right" 
             data-aos-delay="300">
-            ${a[e].homeQuote}
+            ${o[e].homeQuote}
           </p>
 
           <a 
@@ -201,12 +201,12 @@
             class="inline-block mt-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded" 
             data-aos="zoom-in" 
             data-aos-delay="400">
-            ${a[e].viewResume}
+            ${o[e].viewResume}
           </a>
         </div>
       </div>
     </section>
-  `);function ke(e,a){Y("resume");const t=a[e];return`
+  `);function ke(e,o){Y("resume");const t=o[e];return`
     <section id="resume" 
              class="min-h-screen bg-slate-900 px-4 py-24 flex flex-col justify-start text-white">
 
@@ -232,7 +232,7 @@
         </div>
       </div>
     </section>
-  `}function Se(e,a){Y("projects");const t=a[e];return`
+  `}function Se(e,o){Y("projects");const t=o[e];return`
     <section id="projects" class="min-h-screen bg-slate-800 px-4 py-24">
       <div class="max-w-7xl mx-auto space-y-20">
         <div data-aos="fade-down" data-aos-delay="100">
@@ -250,156 +250,124 @@
         </div>
       </div>
     </section>
-  `}function pe(e,a){return`
+  `}function pe(e,o){return`
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[525px] gap-y-6 justify-items-center mt-12">
-      ${a[e].workExperience.map((i,n)=>`
+      ${o[e].workExperience.map((a,n)=>`
         <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-[500px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
              data-aos="fade-up" data-aos-delay="${n*100}">
-          <h3 class="text-lg font-semibold text-cyan-400">${i.company}</h3>
-          <h4 class="text-xl font-bold text-white mt-1">${i.title}</h4>
-          <p class="text-sm text-cyan-200 italic mt-1">${i.duration}</p>
+          <h3 class="text-lg font-semibold text-cyan-400">${a.company}</h3>
+          <h4 class="text-xl font-bold text-white mt-1">${a.title}</h4>
+          <p class="text-sm text-cyan-200 italic mt-1">${a.duration}</p>
           <p class="text-slate-300 text-[17px] mt-4 leading-relaxed whitespace-pre-line">
-            ${i.description.trim()}
+            ${a.description.trim()}
           </p>
         </div>
       `).join("")}
     </div>
-  `}function Pe(e,a){return`
+  `}function Pe(e,o){return`
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[525px] gap-y-6 justify-items-center mt-12">
-      ${a[e].conferences.map((i,n)=>`
+      ${o[e].conferences.map((a,n)=>`
         <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-[500px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
              data-aos="fade-up" data-aos-delay="${n*100}">
-          <h3 class="text-lg font-semibold text-cyan-400">${i.title}</h3>
-          <h4 class="text-xl font-bold text-white mt-1">${i.role}</h4>
-          <p class="text-sm text-cyan-200 italic mt-1">${i.date}</p>
+          <h3 class="text-lg font-semibold text-cyan-400">${a.title}</h3>
+          <h4 class="text-xl font-bold text-white mt-1">${a.role}</h4>
+          <p class="text-sm text-cyan-200 italic mt-1">${a.date}</p>
           <p class="text-slate-300 text-[17px] mt-4 leading-relaxed whitespace-pre-line">
-            ${i.description.trim()}
+            ${a.description.trim()}
           </p>
         </div>
       `).join("")}
     </div>
-  `}function Ve(e,a){const t=a[e];return`
+  `}function Ve(e,o){const t=o[e];return`
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[525px] gap-y-6 justify-items-center mt-12">
-      ${a[e].projectsList.map((n,o)=>`
+      ${o[e].projectsList.map((n,i)=>`
         <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-[500px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
-             data-aos="fade-up" data-aos-delay="${o*100}">
+             data-aos="fade-up" data-aos-delay="${i*100}">
           <div class="flex flex-wrap gap-2 mb-3">
             ${n.tech.map(l=>`<span class="bg-cyan-800 text-cyan-100 text-xs font-semibold px-2 py-1 rounded">${l}</span>`).join("")}
           </div>
           <h3 class="text-xl font-bold text-cyan-400 mb-1">${n.title}</h3>
           <p class="text-slate-300 text-[17px] mt-2 leading-relaxed whitespace-pre-line">${n.description.trim()}</p>
-          <p id="more-${o}" class="text-slate-300 text-[17px] mt-2 leading-relaxed whitespace-pre-line hidden">${n.extended.trim()}</p>
-          <button data-target="${o}" class="read-more-btn mt-2 text-sm text-cyan-400 hover:underline">${t.readMore}</button>
+          <p id="more-${i}" class="text-slate-300 text-[17px] mt-2 leading-relaxed whitespace-pre-line hidden">${n.extended.trim()}</p>
+          <button data-target="${i}" class="read-more-btn mt-2 text-sm text-cyan-400 hover:underline">${t.readMore}</button>
         </div>
       `).join("")}
     </div>
-  `}function Ae(e,a){const t=document.getElementById("tab-content"),i=(n,o)=>{document.getElementById(n).addEventListener("click",()=>{t.innerHTML=o(e,a),requestAnimationFrame(()=>de.refresh()),document.querySelectorAll(".tab-button").forEach(l=>l.classList.replace("text-yellow-300","text-cyan-400")),document.getElementById(n).classList.replace("text-cyan-400","text-yellow-300")})};i("projects-tab",Ve),i("work-tab",pe),i("conferences-tab",Pe),t.innerHTML=pe(e,a),requestAnimationFrame(()=>de.refresh()),document.getElementById("work-tab").classList.replace("text-cyan-400","text-yellow-300")}function Te(e,a){var i;Y("timeline");const t=(i=a[e])==null?void 0:i.timelineEvents;return Array.isArray(t)?`
+  `}function Ae(e,o){const t=document.getElementById("tab-content"),a=(n,i)=>{document.getElementById(n).addEventListener("click",()=>{t.innerHTML=i(e,o),requestAnimationFrame(()=>de.refresh()),document.querySelectorAll(".tab-button").forEach(l=>l.classList.replace("text-yellow-300","text-cyan-400")),document.getElementById(n).classList.replace("text-cyan-400","text-yellow-300")})};a("projects-tab",Ve),a("work-tab",pe),a("conferences-tab",Pe),t.innerHTML=pe(e,o),requestAnimationFrame(()=>de.refresh()),document.getElementById("work-tab").classList.replace("text-cyan-400","text-yellow-300")}function Ie(e,o){var a;Y("timeline");const t=(a=o[e])==null?void 0:a.timelineEvents;return Array.isArray(t)?`
     <section id="timeline" class="min-h-screen bg-slate-900 py-24 px-4">
       <div class="max-w-screen-xl mx-auto">
         <div data-aos="fade-down" data-aos-delay="100">
-          ${ie(a[e].timeline,"text-cyan-400","left")}
+          ${ie(o[e].timeline,"text-cyan-400","left")}
         </div>
         <div class="space-y-16 relative mt-12">
           <div class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-[2px] bg-cyan-500 z-0"></div>
-          ${t.map((n,o)=>Ce(n,o)).join("")}
+          ${t.map((n,i)=>Oe(n,i)).join("")}
         </div>
       </div>
     </section>
-  `:(console.error("❌ timelineEvents not found or not an array"),"<section id='timeline'></section>")}function Ce({year:e,title:a,description:t,side:i},n){const o=i==="left",l=o?"fade-right":"fade-left",y=n*100;return`
-    <div class="flex items-center w-full relative" data-aos="${l}" data-aos-delay="${y}">
-      ${o?fe(e,a,t,"right"):ge()}
+  `:(console.error("❌ timelineEvents not found or not an array"),"<section id='timeline'></section>")}function Oe({year:e,title:o,description:t,side:a},n){const i=a==="left",l=i?"fade-right":"fade-left",b=n*100;return`
+    <div class="flex items-center w-full relative" data-aos="${l}" data-aos-delay="${b}">
+      ${i?fe(e,o,t,"right"):ge()}
       <div class="w-[2px] bg-cyan-500 relative flex justify-center z-10">
         <div class="absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-cyan-400 border-2 border-white rounded-full z-10"></div>
-        <div class="absolute top-1/2 transform -translate-y-1/2 ${o?"right-full":"left-full"} w-16 sm:w-24 md:w-[160px] h-0.5 bg-cyan-500 z-0"></div>
+        <div class="absolute top-1/2 transform -translate-y-1/2 ${i?"right-full":"left-full"} w-16 sm:w-24 md:w-[160px] h-0.5 bg-cyan-500 z-0"></div>
       </div>
-      ${o?ge():fe(e,a,t,"left")}
+      ${i?ge():fe(e,o,t,"left")}
     </div>
-  `}function fe(e,a,t,i){return`
-    <div class="w-1/2 flex ${i==="left"?"justify-start":"justify-end"} relative">
-      <div class="bg-slate-800 border border-cyan-500 rounded-md p-4 w-full max-w-md text-slate-200 ${i==="left"?"ml-[160px]":"mr-[160px]"}">
+  `}function fe(e,o,t,a){return`
+    <div class="w-1/2 flex ${a==="left"?"justify-start":"justify-end"} relative">
+      <div class="bg-slate-800 border border-cyan-500 rounded-md p-4 w-full max-w-md text-slate-200 ${a==="left"?"ml-[160px]":"mr-[160px]"}">
         <p class="text-cyan-400 text-sm">${e}</p>
-        <h3 class="font-semibold text-lg">${a}</h3>
+        <h3 class="font-semibold text-lg">${o}</h3>
         <p class="text-sm mt-1">${t}</p>
       </div>
     </div>
-  `}function ge(){return'<div class="w-1/2"></div>'}function Oe(){return`
-      <aside class="hidden sm:flex fixed top-0 left-0 h-full w-20 bg-slate-900 shadow-md flex-col items-center py-6 z-50 space-y-6">
+  `}function ge(){return'<div class="w-1/2"></div>'}function De(){return`
+    <!-- Mobile toggle button -->
+    <button id="sidebar-toggle" class="fixed top-4 left-4 z-50 sm:hidden bg-slate-800 p-2 rounded-md shadow-md text-white">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
 
-  
-        <!-- Home -->
-        <a href="#home" class="group">
-          <div class="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 10l9-7 9 7v10a2 2 0 01-2 2h-4a2 2 0 01-2-2V14a2 2 0 00-2-2H5a2 2 0 00-2 2v6" />
-            </svg>
-            <span id="nav-home" class="text-xs">Home</span>
-          </div>
-        </a>
-  
-        <!-- About -->
-        <a href="#about-section" class="group">
-          <div class="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M5.121 17.804A13.937 13.937 0 0112 15c2.21 0 4.29.534 6.121 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            <span id="nav-about" class="text-xs">About</span>
-          </div>
-        </a>
-  
-        <!-- Resume -->
-        <a href="#resume" class="group">
-          <div class="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M8 16h8M8 12h8M9 8h6M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" />
-            </svg>
-            <span id="nav-resume"  class="text-xs">Resume</span>
-          </div>
-        </a>
-  
-        <!-- Work -->
-        <a href="#projects" class="group">
-          <div class="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M16 7V3H8v4M3 21h18V7H3v14z" />
-            </svg>
-            <span id="nav-work" class="text-xs">Work</span>
-          </div>
-        </a>
-  
-        <!-- Timeline -->
-        <a href="#timeline" class="group">
-          <div class="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 8v4l3 3m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span id="nav-timeline" class="text-xs">Timeline</span>
-          </div>
-        </a>
-  
-        <!-- Contact -->
-        <a href="#contact" class="group">
-          <div class="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <span id="nav-contact" class="text-xs">Contact</span>
-          </div>
-        </a>
-        
-       <!-- Language Switcher with Font Awesome -->
-<button id="lang-toggle" class="flex flex-col items-center text-slate-400 hover:text-cyan-400 transition focus:outline-none">
-  <i class="fas fa-globe text-xl mb-1"></i>
-  <span id="nav-lang" class="text-xs">EN / GR</span>
-</button>
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed top-0 left-0 h-full w-64 sm:w-20 bg-slate-900 shadow-md flex flex-col items-center py-6 z-40 space-y-6 transform -translate-x-full sm:translate-x-0 transition-transform duration-300 ease-in-out">
+      <!-- Close button (only mobile) -->
+      <button id="sidebar-close" class="absolute top-4 right-4 sm:hidden text-white text-xl">
+        <i class="fas fa-times"></i>
+      </button>
 
-      </aside>
-    `}const k={en:{home:"Home",about:"About",resume:"Resume",work:"Work",timeline:"Timeline",contact:"Contact",langToggle:"EN / GR",homeQuote:"“The beginning is half of the whole.”",viewResume:"View Resume",typewriter:["Computer Engineer specialized in Hardware Design ","Passionate about Digital Systems and Embedded Architectures ","Focused on Clean, Efficient, and Scalable Hardware Solutions ","Driven by Design Precision and Logical Structure ","Exploring RTL, SoC Design, and Embedded Development "],aboutSection:{title:"About Me",nameIntro:"My name is Georgios Ntakos, and I recently completed my Integrated Master’s degree in Computer Engineering from the Computer Engineering and Informatics Department (CEID) of the University of Patras, graduating in 2024.",motivation:"I’m a motivated and detail-driven Computer Engineer, passionate about digital systems, embedded design, and problem solving. Even at the beginning of my career, I strive to build efficient, reliable, and meaningful solutions.",studies:"During my studies, I developed a strong foundation in hardware description languages, software engineering, and EDA tools. I particularly enjoy working at the intersection of hardware and software — combining logic, structure, and creativity in every project.",goal:"I'm eager to contribute to real-world challenges, collaborate in dynamic teams, and continue evolving as a developer and engineer.",info:{birthday:"Birthday",degree:"Degree",city:"City",email:"Email",age:"Age",availability:"Availability"},labels:{birthday:"Mar. 1999",degree:"Integrated Master",city:"Athens, Greece",availability:"Open to work"},skillsTitle:"Skills"},resume:"Resume",resumeIntro:"For a complete overview of my academic background, practical experience, and technical expertise, you can download my full CV in PDF format below.",projectsTitle:"Projects & Work Experience",workTab:"Work Experience",projectsTab:"Projects",conferencesTab:"Conferences & Events",readMore:"Read more",readLess:"Read less",workExperience:[{company:"Think Silicon (Applied Materials)",title:"Hardware Designer Internship",duration:"Mar. 2023 – Jun. 2023",description:`I collaborated on floating-point Soft-IP modules in SystemVerilog, focusing on RTL verification with Synopsys tools.
+      <!-- Navigation icons -->
+      <nav class="mt-12 sm:mt-0 flex flex-col gap-6 items-center text-slate-400">
+        <a href="#home" class="group nav-icon">
+          <i class="fas fa-home text-lg mb-1"></i>
+          <span id="nav-home" class="text-xs">Home</span>
+        </a>
+        <a href="#about-section" class="group nav-icon">
+          <i class="fas fa-user text-lg mb-1"></i>
+          <span id="nav-about" class="text-xs">About</span>
+        </a>
+        <a href="#resume" class="group nav-icon">
+          <i class="fas fa-file-alt text-lg mb-1"></i>
+          <span id="nav-resume" class="text-xs">Resume</span>
+        </a>
+        <a href="#projects" class="group nav-icon">
+          <i class="fas fa-briefcase text-lg mb-1"></i>
+          <span id="nav-work" class="text-xs">Work</span>
+        </a>
+        <a href="#timeline" class="group nav-icon">
+          <i class="fas fa-clock text-lg mb-1"></i>
+          <span id="nav-timeline" class="text-xs">Timeline</span>
+        </a>
+        <a href="#contact" class="group nav-icon">
+          <i class="fas fa-envelope text-lg mb-1"></i>
+          <span id="nav-contact" class="text-xs">Contact</span>
+        </a>
+        <button id="lang-toggle" class="nav-icon focus:outline-none">
+          <i class="fas fa-globe text-lg mb-1"></i>
+          <span id="nav-lang" class="text-xs">EN / GR</span>
+        </button>
+      </nav>
+    </aside>
+  `}const k={en:{home:"Home",about:"About",resume:"Resume",work:"Work",timeline:"Timeline",contact:"Contact",langToggle:"EN / GR",homeQuote:"“The beginning is half of the whole.”",viewResume:"View Resume",typewriter:["Computer Engineer specialized in Hardware Design ","Passionate about Digital Systems and Embedded Architectures ","Focused on Clean, Efficient, and Scalable Hardware Solutions ","Driven by Design Precision and Logical Structure ","Exploring RTL, SoC Design, and Embedded Development "],aboutSection:{title:"About Me",nameIntro:"My name is Georgios Ntakos, and I recently completed my Integrated Master’s degree in Computer Engineering from the Computer Engineering and Informatics Department (CEID) of the University of Patras, graduating in 2024.",motivation:"I’m a motivated and detail-driven Computer Engineer, passionate about digital systems, embedded design, and problem solving. Even at the beginning of my career, I strive to build efficient, reliable, and meaningful solutions.",studies:"During my studies, I developed a strong foundation in hardware description languages, software engineering, and EDA tools. I particularly enjoy working at the intersection of hardware and software — combining logic, structure, and creativity in every project.",goal:"I'm eager to contribute to real-world challenges, collaborate in dynamic teams, and continue evolving as a developer and engineer.",info:{birthday:"Birthday",degree:"Degree",city:"City",email:"Email",age:"Age",availability:"Availability"},labels:{birthday:"Mar. 1999",degree:"Integrated Master",city:"Athens, Greece",availability:"Open to work"},skillsTitle:"Skills"},resume:"Resume",resumeIntro:"For a complete overview of my academic background, practical experience, and technical expertise, you can download my full CV in PDF format below.",projectsTitle:"Projects & Work Experience",workTab:"Work Experience",projectsTab:"Projects",conferencesTab:"Conferences & Events",readMore:"Read more",readLess:"Read less",workExperience:[{company:"Think Silicon (Applied Materials)",title:"Hardware Designer Internship",duration:"Mar. 2023 – Jun. 2023",description:`I collaborated on floating-point Soft-IP modules in SystemVerilog, focusing on RTL verification with Synopsys tools.
 I automated synthesis flows using TCL scripting and coordinated with the Thessaloniki team and Synopsys representatives.
 I participated in design sync meetings, contributed to company-wide discussions, and proposed architectural enhancements.`},{company:"University of Patras",title:"Assistant Lab Volunteer",duration:"Oct. 2020 – Jun. 2022",description:`Supported the Basic and Digital Electronics Lab by assisting with lab sessions, supervising trainees, and maintaining lab equipment.
 I conducted circuit implementation and experimentation, analyzed data, and contributed to team collaboration and continuous improvement.`}],conferences:[{title:"MOCAST 2025 – Dresden, Germany",role:"Conference Paper Presentation (Accepted)",date:"11–13 June 2025",description:`Our paper, <em> Optimizing Lightweight Cryptographic Schemes for Enhanced Security in RFID and Wireless Sensor Networks</em>, was accepted for an oral presentation at MOCAST 2025 at TU Dresden.
@@ -442,14 +410,14 @@ I also networked with experts in AI and embedded systems.`}],projectsList:[{titl
   Ενσωμάτωσα αισθητήρες για την απόκτηση δεδομένων και σχεδίασα υλικολογισμικό για ασύρματη μετάδοση Bluetooth και οπτική έξοδο LED.`,extended:`Το σύστημα χρησιμοποίησε δειγματοληψία αναλογικού-ψηφιακού μετατροπέα (ADC) με διακοπή και έναν προσαρμοσμένο αλγόριθμο βαθμονόμησης αισθητήρων.
   Ο μικροελεγκτής λάμβανε ασύρματα τα δεδομένα και εμφάνιζε τις ζωντανές τιμές σε μια οθόνη LED τοποθετημένη στο οπτικό πεδίο του οδηγού.
   Με γνώμονα τη φορητότητα και την ασφάλεια, το έργο σχεδιάστηκε για χρήση σε αυτοκίνητα.
-  Το υλικολογισμικό γράφτηκε σε ενσωματωμένη C και βελτιστοποιήθηκε για απόκριση και χαμηλή κατανάλωση ενέργειας.`}],timelineEvents:[{year:"Νοε. 2024 – Αυγ. 2025",title:"Στρατιωτική Θητεία – Αντιαεροπορικό Πυροβολικό",description:"Υπηρέτησα στον Ελληνικό Στρατό σε μονάδα αντιαεροπορικού πυροβολικού στη Σάμο, εκπληρώνοντας τα εθνικά μου καθήκοντα με συνέπεια.",side:"left"},{year:"11 Ιουν. 2025 – 13 Ιουν. 2025",title:"Αποδοχή Εργασίας στο MOCAST 2025",description:"Συνέγραψα εργασία για ελαφριά κρυπτογράφηση με FPGA, η οποία έγινε δεκτή για προφορική παρουσίαση στο MOCAST 2025 (TU Dresden). Δεν μπόρεσα να παρευρεθώ λόγω στρατιωτικών υποχρεώσεων.",side:"right"},{year:"Δεκ. 2024",title:"Αποφοίτηση από το ΤΜΗΥΠ",description:"Ολοκλήρωσα το Ενιαίο Πτυχίο / Μεταπτυχιακό στη Μηχανική Υπολογιστών στο Πανεπιστήμιο Πατρών.",side:"left"},{year:"8 Ιουν. 2023",title:"Atoms to Algos II – Αθήνα",description:"Παρακολούθησα συνέδριο υψηλού επιπέδου για ημιαγωγούς και AI, με συμμετοχές από NVIDIA και Qualcomm. Εξέτασα καινοτομίες στη σχεδίαση chip και AI αρχιτεκτονικών.",side:"right"},{year:"Μαρ. 2023 – Ιουν. 2023",title:"Πρακτική Άσκηση στη Think Silicon",description:"Ασχολήθηκα με σχεδίαση Soft-IP κινητής υποδιαστολής σε SystemVerilog και εργαλεία Synopsys.",side:"left"},{year:"Δεκ. 2022 – Οκτ. 2024",title:"Διπλωματική: Hummingbird-2 σε FPGA",description:"Ανάπτυξα πυρήνα αυθεντικοποιημένης κρυπτογράφησης με βελτιστοποίηση για hardware απόδοση.",side:"right"},{year:"Οκτ. 2020 – Ιουν. 2022",title:"Βοηθός στο Εργαστήριο Ψηφιακών και Βασικών Ηλεκτρονικών",description:"Επίβλεψα φοιτητές και διατήρησα εξοπλισμό, διασφαλίζοντας την ομαλή λειτουργία του εργαστηρίου.",side:"left"}],contactSection:{title:"Επικοινωνία",namePlaceholder:"Το όνομά σας",emailPlaceholder:"Το email σας",messagePlaceholder:"Το μήνυμά σας",sendButton:"Αποστολή",tooltipEmail:"Αποστολή Email",tooltipGitHub:"Προβολή GitHub",tooltipLinkedIn:"Προβολή LinkedIn"}}};let z=localStorage.getItem("lang")||"en";function De(e){document.querySelector("#app").innerHTML=`
-    ${Oe()}
-    <main class="bg-slate-950 text-white ml-20">
-      ${xe(e,k)}
-      ${be(e,k)}
+  Το υλικολογισμικό γράφτηκε σε ενσωματωμένη C και βελτιστοποιήθηκε για απόκριση και χαμηλή κατανάλωση ενέργειας.`}],timelineEvents:[{year:"Νοε. 2024 – Αυγ. 2025",title:"Στρατιωτική Θητεία – Αντιαεροπορικό Πυροβολικό",description:"Υπηρέτησα στον Ελληνικό Στρατό σε μονάδα αντιαεροπορικού πυροβολικού στη Σάμο, εκπληρώνοντας τα εθνικά μου καθήκοντα με συνέπεια.",side:"left"},{year:"11 Ιουν. 2025 – 13 Ιουν. 2025",title:"Αποδοχή Εργασίας στο MOCAST 2025",description:"Συνέγραψα εργασία για ελαφριά κρυπτογράφηση με FPGA, η οποία έγινε δεκτή για προφορική παρουσίαση στο MOCAST 2025 (TU Dresden). Δεν μπόρεσα να παρευρεθώ λόγω στρατιωτικών υποχρεώσεων.",side:"right"},{year:"Δεκ. 2024",title:"Αποφοίτηση από το ΤΜΗΥΠ",description:"Ολοκλήρωσα το Ενιαίο Πτυχίο / Μεταπτυχιακό στη Μηχανική Υπολογιστών στο Πανεπιστήμιο Πατρών.",side:"left"},{year:"8 Ιουν. 2023",title:"Atoms to Algos II – Αθήνα",description:"Παρακολούθησα συνέδριο υψηλού επιπέδου για ημιαγωγούς και AI, με συμμετοχές από NVIDIA και Qualcomm. Εξέτασα καινοτομίες στη σχεδίαση chip και AI αρχιτεκτονικών.",side:"right"},{year:"Μαρ. 2023 – Ιουν. 2023",title:"Πρακτική Άσκηση στη Think Silicon",description:"Ασχολήθηκα με σχεδίαση Soft-IP κινητής υποδιαστολής σε SystemVerilog και εργαλεία Synopsys.",side:"left"},{year:"Δεκ. 2022 – Οκτ. 2024",title:"Διπλωματική: Hummingbird-2 σε FPGA",description:"Ανάπτυξα πυρήνα αυθεντικοποιημένης κρυπτογράφησης με βελτιστοποίηση για hardware απόδοση.",side:"right"},{year:"Οκτ. 2020 – Ιουν. 2022",title:"Βοηθός στο Εργαστήριο Ψηφιακών και Βασικών Ηλεκτρονικών",description:"Επίβλεψα φοιτητές και διατήρησα εξοπλισμό, διασφαλίζοντας την ομαλή λειτουργία του εργαστηρίου.",side:"left"}],contactSection:{title:"Επικοινωνία",namePlaceholder:"Το όνομά σας",emailPlaceholder:"Το email σας",messagePlaceholder:"Το μήνυμά σας",sendButton:"Αποστολή",tooltipEmail:"Αποστολή Email",tooltipGitHub:"Προβολή GitHub",tooltipLinkedIn:"Προβολή LinkedIn"}}};let z=localStorage.getItem("lang")||"en";function Ce(e){document.querySelector("#app").innerHTML=`
+    ${De()}
+    <main class="bg-slate-950 text-white ml-0 sm:ml-20 px-4">
+      ${we(e,k)}
+      ${ve(e,k)}
       ${ke(e,k)}
       ${Se(e,k)}
-      ${Te(e,k)}
-      ${we(e,k)}
+      ${Ie(e,k)}
+      ${xe(e,k)}
     </main>
-  `}function Ie(e){const a=k[e];document.getElementById("nav-home").innerText=a.home,document.getElementById("nav-about").innerText=a.about,document.getElementById("nav-resume").innerText=a.resume,document.getElementById("nav-work").innerText=a.work,document.getElementById("nav-timeline").innerText=a.timeline,document.getElementById("nav-contact").innerText=a.contact,document.getElementById("nav-lang").innerText=a.langToggle}function ze(e){Ie(e),document.getElementById("home").outerHTML=xe(e,k),document.getElementById("about-section").outerHTML=be(e,k),document.getElementById("resume").outerHTML=ke(e,k),document.getElementById("projects").outerHTML=Se(e,k),document.getElementById("timeline").outerHTML=Te(e,k),document.getElementById("contact").outerHTML=we(e,k),Ae(e,k),ve(),setTimeout(()=>{document.querySelectorAll(".read-more-btn").forEach(a=>{var n;const t=a.getAttribute("data-target"),i=(n=document.getElementById(`more-${t}`))==null?void 0:n.classList.contains("hidden");a.textContent=i?k[e].readMore:k[e].readLess}),de.init({duration:600,easing:"ease-out-cubic",once:!0})},100),window.scrollTo({top:0,behavior:"smooth"})}De(z);Ie(z);Ae(z,k);ve();window.addEventListener("load",()=>{window.location.hash&&history.replaceState(null,null," "),setTimeout(()=>{var e;(e=document.getElementById("home"))==null||e.scrollIntoView({behavior:"auto"}),de.init({duration:600,easing:"ease-out-cubic",once:!0})},100)});window.addEventListener("beforeunload",()=>{sessionStorage.clear()});document.addEventListener("DOMContentLoaded",()=>{document.getElementById("lang-toggle").addEventListener("click",()=>{z=z==="en"?"gr":"en",localStorage.setItem("lang",z),je(!0),ze(z)});const e=document.querySelectorAll(".tab-button");e.forEach(a=>{a.addEventListener("click",()=>{e.forEach(t=>t.classList.replace("text-yellow-300","text-cyan-400")),a.classList.replace("text-cyan-400","text-yellow-300")})})});document.addEventListener("click",e=>{if(e.target.classList.contains("read-more-btn")){const a=e.target.getAttribute("data-target"),i=document.getElementById(`more-${a}`).classList.toggle("hidden");e.target.textContent=i?k[z].readMore:k[z].readLess}});
+  `}function Te(e){const o=k[e];document.getElementById("nav-home").innerText=o.home,document.getElementById("nav-about").innerText=o.about,document.getElementById("nav-resume").innerText=o.resume,document.getElementById("nav-work").innerText=o.work,document.getElementById("nav-timeline").innerText=o.timeline,document.getElementById("nav-contact").innerText=o.contact,document.getElementById("nav-lang").innerText=o.langToggle}function ze(e){Te(e),document.getElementById("home").outerHTML=we(e,k),document.getElementById("about-section").outerHTML=ve(e,k),document.getElementById("resume").outerHTML=ke(e,k),document.getElementById("projects").outerHTML=Se(e,k),document.getElementById("timeline").outerHTML=Ie(e,k),document.getElementById("contact").outerHTML=xe(e,k),Ae(e,k),ye(),setTimeout(()=>{document.querySelectorAll(".read-more-btn").forEach(o=>{var n;const t=o.getAttribute("data-target"),a=(n=document.getElementById(`more-${t}`))==null?void 0:n.classList.contains("hidden");o.textContent=a?k[e].readMore:k[e].readLess}),de.init({duration:600,easing:"ease-out-cubic",once:!0})},100),window.scrollTo({top:0,behavior:"smooth"})}Ce(z);Te(z);Ae(z,k);ye();window.addEventListener("load",()=>{window.location.hash&&history.replaceState(null,null," "),setTimeout(()=>{var e;(e=document.getElementById("home"))==null||e.scrollIntoView({behavior:"auto"}),de.init({duration:600,easing:"ease-out-cubic",once:!0})},100)});window.addEventListener("beforeunload",()=>{sessionStorage.clear()});document.addEventListener("DOMContentLoaded",()=>{document.getElementById("lang-toggle").addEventListener("click",()=>{z=z==="en"?"gr":"en",localStorage.setItem("lang",z),je(!0),ze(z)});const e=document.querySelectorAll(".tab-button");e.forEach(o=>{o.addEventListener("click",()=>{e.forEach(t=>t.classList.replace("text-yellow-300","text-cyan-400")),o.classList.replace("text-cyan-400","text-yellow-300")})})});document.addEventListener("click",e=>{if(e.target.classList.contains("read-more-btn")){const o=e.target.getAttribute("data-target"),a=document.getElementById(`more-${o}`).classList.toggle("hidden");e.target.textContent=a?k[z].readMore:k[z].readLess}});document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("sidebar"),o=document.getElementById("sidebar-toggle"),t=document.getElementById("sidebar-close");o&&e&&o.addEventListener("click",()=>{e.classList.remove("-translate-x-full")}),t&&e&&t.addEventListener("click",()=>{e.classList.add("-translate-x-full")}),document.querySelectorAll(".nav-icon a").forEach(a=>{a.addEventListener("click",()=>{window.innerWidth<640&&e.classList.add("-translate-x-full")})})});
