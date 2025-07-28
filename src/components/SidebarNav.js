@@ -1,18 +1,19 @@
 export function SidebarNav() {
   return `
-    <!-- Mobile toggle button -->
+    <!-- Mobile Toggle Button -->
     <button id="sidebar-toggle" class="fixed top-4 left-4 z-50 sm:hidden bg-slate-800 p-2 rounded-md shadow-md text-white">
       <i class="fas fa-bars text-xl"></i>
     </button>
 
     <!-- Sidebar -->
-    <aside id="sidebar" class="fixed top-0 left-0 h-full w-64 sm:w-20 bg-slate-900 shadow-md flex flex-col items-center py-6 z-40 space-y-6 transform -translate-x-full sm:translate-x-0 transition-transform duration-300 ease-in-out">
-      <!-- Close button (only mobile) -->
+    <aside id="sidebar" class="fixed top-0 left-0 h-full w-3/4 max-w-xs sm:w-20 bg-slate-900 shadow-md flex flex-col items-center py-6 z-40 space-y-6 transform -translate-x-full sm:translate-x-0 transition-transform duration-300 ease-in-out">
+
+      <!-- Close (only mobile) -->
       <button id="sidebar-close" class="absolute top-4 right-4 sm:hidden text-white text-xl">
         <i class="fas fa-times"></i>
       </button>
 
-      <!-- Navigation icons -->
+      <!-- Navigation -->
       <nav class="mt-12 sm:mt-0 flex flex-col gap-6 items-center text-slate-400">
         <a href="#home" class="group nav-icon">
           <i class="fas fa-home text-lg mb-1"></i>

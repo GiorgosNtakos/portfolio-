@@ -137,7 +137,6 @@ document.addEventListener("click", (e) => {
 });
 
 
-// Sidebar mobile toggle logic
 document.addEventListener("DOMContentLoaded", () => {
   const sidebar = document.getElementById("sidebar");
   const toggleBtn = document.getElementById("sidebar-toggle");
@@ -155,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Κλείσε το sidebar όταν κάνεις click σε link (μόνο σε mobile)
+  // Κλείσιμο όταν γίνει click σε link (μόνο κινητό)
   document.querySelectorAll(".nav-icon a").forEach(link => {
     link.addEventListener("click", () => {
       if (window.innerWidth < 640) {
