@@ -20,7 +20,7 @@ let languageJustChanged = false;
 function renderAllSections(lang) {
   document.querySelector('#app').innerHTML = `
     ${SidebarNav()}
-    <main class="bg-slate-950 text-white ml-0 sm:ml-20 px-4">
+    <main class="bg-slate-950 text-white sm:ml-20">
       ${renderHome(lang, translations)}
       ${renderAbout(lang, translations)}
       ${renderResume(lang, translations)}
@@ -142,25 +142,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("sidebar-toggle");
   const closeBtn = document.getElementById("sidebar-close");
 
+  const openSidebar = () => {
+    sidebar.classList.remove("-translate-x-full", "opacity-0", "scale-95");
+    sidebar.classList.add("translate-x-0", "opacity-100", "scale-100");
+  };
+
+  const closeSidebar = () => {
+    sidebar.classList.add("-translate-x-full", "opacity-0", "scale-95");
+    sidebar.classList.remove("translate-x-0", "opacity-100", "scale-100");
+  };
+
   if (toggleBtn && sidebar) {
-    toggleBtn.addEventListener("click", () => {
-      sidebar.classList.remove("-translate-x-full");
-    });
+    toggleBtn.addEventListener("click", openSidebar);
   }
 
   if (closeBtn && sidebar) {
-    closeBtn.addEventListener("click", () => {
-      sidebar.classList.add("-translate-x-full");
-    });
+    closeBtn.addEventListener("click", closeSidebar);
   }
 
-  // Κλείσιμο όταν γίνει click σε link (μόνο κινητό)
+  // Optional: κλείσιμο όταν γίνει κλικ σε link (μόνο σε κινητό)
   document.querySelectorAll(".nav-icon a").forEach(link => {
     link.addEventListener("click", () => {
       if (window.innerWidth < 640) {
-        sidebar.classList.add("-translate-x-full");
+        closeSidebar();
       }
     });
   });
 });
-

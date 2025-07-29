@@ -1,12 +1,10 @@
-// src/components/ProjectsSection.js
+// Updated ProjectsSection.js with larger square-like cards for desktop/laptop screens and responsive tab buttons
 import { SectionTitle } from './SectionTitle.js';
 import AOS from 'aos';
 import { manageAOS } from '../helpers/helperAOS.js';
 
-// ProjectsSection.js
-
 export function renderProjects(lang, translations) {
-  manageAOS('projects')
+  manageAOS('projects');
   const t = translations[lang];
 
   return `
@@ -17,10 +15,10 @@ export function renderProjects(lang, translations) {
         </div>
 
         <div class="max-w-5xl mx-auto text-center">
-          <div class="flex justify-center mt-8 gap-10 text-lg sm:text-xl font-semibold" data-aos="fade-up" data-aos-delay="200">
-            <button id="work-tab" class="tab-button text-cyan-400 relative pb-1 border-b-2 border-transparent hover:border-cyan-400 transition px-4 py-2">${t.workTab}</button>
-            <button id="projects-tab" class="tab-button text-cyan-400 relative pb-1 border-b-2 border-transparent hover:border-cyan-400 transition px-4 py-2">${t.projectsTab}</button>
-            <button id="conferences-tab" class="tab-button text-cyan-400 relative pb-1 border-b-2 border-transparent hover:border-cyan-400 transition px-4 py-2">${t.conferencesTab}</button>
+          <div class="flex flex-wrap justify-center mt-8 gap-4 sm:gap-6 text-base sm:text-lg md:text-xl font-semibold" data-aos="fade-up" data-aos-delay="200">
+            <button id="work-tab" class="tab-button text-cyan-400 relative pb-1 border-b-2 border-transparent hover:border-cyan-400 transition px-3 py-2">${t.workTab}</button>
+            <button id="projects-tab" class="tab-button text-cyan-400 relative pb-1 border-b-2 border-transparent hover:border-cyan-400 transition px-3 py-2">${t.projectsTab}</button>
+            <button id="conferences-tab" class="tab-button text-cyan-400 relative pb-1 border-b-2 border-transparent hover:border-cyan-400 transition px-3 py-2">${t.conferencesTab}</button>
           </div>
 
           <div id="tab-content" class="mt-10 text-slate-300 text-center"></div>
@@ -30,16 +28,13 @@ export function renderProjects(lang, translations) {
   `;
 }
 
-
-
-
 export function renderWorkExperience(lang, translation) {
   const experiences = translation[lang].workExperience;
 
   return `
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[525px] gap-y-6 justify-items-center mt-12">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-12 justify-items-center mt-12">
       ${experiences.map((exp, i) => `
-        <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-[500px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
+        <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-full max-w-[700px] min-h-[480px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
              data-aos="fade-up" data-aos-delay="${i * 100}">
           <h3 class="text-lg font-semibold text-cyan-400">${exp.company}</h3>
           <h4 class="text-xl font-bold text-white mt-1">${exp.title}</h4>
@@ -57,9 +52,9 @@ export function renderConferences(lang, translation) {
   const events = translation[lang].conferences;
 
   return `
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[525px] gap-y-6 justify-items-center mt-12">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-12 justify-items-center mt-12">
       ${events.map((event, i) => `
-        <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-[500px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
+        <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-full max-w-[700px] min-h-[480px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
              data-aos="fade-up" data-aos-delay="${i * 100}">
           <h3 class="text-lg font-semibold text-cyan-400">${event.title}</h3>
           <h4 class="text-xl font-bold text-white mt-1">${event.role}</h4>
@@ -78,9 +73,9 @@ export function renderProjectsTab(lang, translations) {
   const projects = translations[lang].projectsList;
 
   return `
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[525px] gap-y-6 justify-items-center mt-12">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-12 justify-items-center mt-12">
       ${projects.map((item, index) => `
-        <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-[500px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
+        <div class="bg-slate-900 shadow-lg border border-cyan-700 rounded-xl p-6 w-full max-w-[700px] min-h-[480px] flex flex-col justify-start text-left hover:shadow-cyan-500/20 transition-shadow duration-300"
              data-aos="fade-up" data-aos-delay="${index * 100}">
           <div class="flex flex-wrap gap-2 mb-3">
             ${item.tech.map(tag => `<span class="bg-cyan-800 text-cyan-100 text-xs font-semibold px-2 py-1 rounded">${tag}</span>`).join('')}
@@ -114,12 +109,7 @@ export function setupProjectTabs(lang, translations) {
   setupTab("work-tab", renderWorkExperience);
   setupTab("conferences-tab", renderConferences);
 
-  // ⏱ Default ενεργό tab
   tabContent.innerHTML = renderWorkExperience(lang, translations);
   requestAnimationFrame(() => AOS.refresh());
   document.getElementById("work-tab").classList.replace("text-cyan-400", "text-yellow-300");
 }
-
-
-
-

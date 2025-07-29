@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html, body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: #0f172a;
 }
@@ -24,24 +25,22 @@ html {
   from { width: 100% }
   to { width: 0 }
 }
-@keyframes blink {
-  0%, 100% { border-color: transparent }
-  50% { border-color: #0ff }
+
+.blinking {
+  animation: blink 0.7s step-end infinite;
 }
-.typing-text {
-  overflow: hidden;
-  border-right: 0.15em solid #0ff;
-  white-space: nowrap;
-  display: inline-block;
-  animation: typing 3s steps(40, end), blink 0.7s step-end infinite alternate, deleting 3s steps(40, end) 4s;
-  animation-iteration-count: infinite;
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #0ff; }
 }
 
 #typing-text {
-  white-space: nowrap;
-  display: inline-block;
-  overflow: hidden;
+  white-space: normal;
+  word-break: break-word;
 }
+
+
 
 .text-shadow-neon {
   text-shadow: 0 0 8px rgba(34, 211, 238, 0.8), 0 0 12px rgba(34, 211, 238, 0.3);

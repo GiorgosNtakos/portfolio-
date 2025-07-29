@@ -7,16 +7,13 @@ export const renderContact = (lang, translations) => {
   return `
   <section id="contact" class="min-h-screen flex items-center justify-center bg-slate-800 px-4">
     <form action="https://formspree.io/f/mjkrwepg" method="POST"
-      class="bg-slate-900 p-8 rounded-lg shadow-md w-full max-w-md space-y-4" 
+      class="bg-slate-900 p-8 rounded-xl shadow-lg w-full max-w-lg space-y-5 sm:space-y-6 md:space-y-8" 
       data-aos="fade-up" data-aos-delay="200" novalidate>
-      
-      <!-- Τίτλος -->
-      <h2 class="text-3xl font-bold text-cyan-300 text-center">${t.title}</h2>
 
-      <!-- Honeypot για bots -->
+      <h2 class="text-3xl sm:text-4xl font-bold text-cyan-300 text-center">${t.title}</h2>
+
       <input type="text" name="_gotcha" style="display:none" />
 
-      <!-- Ονομα -->
       <input 
         type="text" 
         name="name" 
@@ -27,7 +24,6 @@ export const renderContact = (lang, translations) => {
                focus:outline-none focus:ring-2 focus:ring-cyan-500" 
       />
 
-      <!-- Email -->
       <input 
         type="email" 
         name="email" 
@@ -38,7 +34,6 @@ export const renderContact = (lang, translations) => {
                focus:outline-none focus:ring-2 focus:ring-cyan-500"
       />
 
-      <!-- Μήνυμα -->
       <textarea 
         name="message" 
         rows="5" 
@@ -48,7 +43,6 @@ export const renderContact = (lang, translations) => {
                focus:outline-none focus:ring-2 focus:ring-cyan-500"
       ></textarea>
 
-      <!-- Submit Button -->
       <button 
         type="submit"
         class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold py-2 px-4 rounded transition"
@@ -56,18 +50,16 @@ export const renderContact = (lang, translations) => {
         ${t.sendButton}
       </button>
 
-      <!-- Social Icons -->
-      <div class="mt-12 flex flex-wrap justify-center gap-6">
+      <div class="mt-12 flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
         ${renderIcon("mailto:g_ntakos.dev@gmail.com", t.tooltipEmail, 250, "email")}
         ${renderIcon("https://github.com/GiorgosNtakos", t.tooltipGitHub, 400, "github")}
         ${renderIcon("https://www.linkedin.com/in/giorgos-ntakos-28b294272/", t.tooltipLinkedIn, 550, "linkedin")}
       </div>
     </form>
   </section>
-`;
+  `;
 };
 
-// Βοηθητική συνάρτηση για social icons
 function renderIcon(href, tooltip, delay, type) {
   const config = {
     email: {
